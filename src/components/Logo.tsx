@@ -30,12 +30,12 @@ export default function Logo({ variant = 'dark', size = 'md', showText = true }:
       {showText && (
         <div className="flex flex-col leading-tight">
           <span
-            className={`font-[family-name:var(--font-display)] font-bold ${size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-xl' : 'text-base'} ${variant === 'light' ? 'text-white' : 'text-[#123C2F]'} tracking-tight`}
+            className={`font-bold ${size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-xl' : 'text-base'} ${variant === 'light' ? 'text-white' : 'text-[#123C2F]'} tracking-tight`}
           >
             Lumeflo
           </span>
           <span
-            className={`font-[family-name:var(--font-display)] font-semibold ${size === 'sm' ? 'text-[8px]' : size === 'lg' ? 'text-[11px]' : 'text-[9px]'} ${variant === 'light' ? 'text-[#D8BC79]' : 'text-[#C9A65B]'} tracking-[0.14em] uppercase`}
+            className={`font-semibold ${size === 'sm' ? 'text-[8px]' : size === 'lg' ? 'text-[11px]' : 'text-[9px]'} ${variant === 'light' ? 'text-[#D8BC79]' : 'text-[#C9A65B]'} tracking-[0.14em] uppercase`}
           >
             Solutions Limited
           </span>

@@ -2,26 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
-import {
-  ArrowRight,
-  CircleCheck as CheckCircle,
-  Award,
-  Zap,
-  Users,
-  Headphones,
-  Star,
-  Globe,
-  Palette,
-  Monitor,
-  TrendingUp,
-  Search,
-  Share2,
-  BookOpen,
-  ChevronLeft,
-  ChevronRight,
-  Quote,
-  BarChart3,
-} from 'lucide-react'
+import { ArrowRight, CircleCheck as CheckCircle, Award, Zap, Users, Headphones, Star, Globe, Palette, Monitor, TrendingUp, Search, Share2, BookOpen, ChevronLeft, ChevronRight, Quote, ChartBar as BarChart3 } from 'lucide-react'
 
 import {
   supabase,
@@ -144,7 +125,7 @@ function StatCard({
         transitionDelay: `${delay}ms`,
       }}
     >
-      <div className="font-display font-extrabold text-4xl md:text-5xl text-gradient-gold">
+      <div className="font-extrabold text-4xl md:text-5xl text-gradient-gold">
         {count}
         {suffix}
       </div>
@@ -435,7 +416,7 @@ export default function HomePage() {
             >
               <div className="w-2 h-2 rounded-full bg-[#C9A65B] animate-pulse" />
 
-              <span className="text-[#D8BC79] font-display font-semibold text-sm tracking-wide">
+              <span className="text-[#D8BC79] font-semibold text-sm tracking-wide">
                 Africa&apos;s Trusted Creative &amp; Digital Agency
               </span>
             </div>
@@ -616,7 +597,7 @@ export default function HomePage() {
 
           <div className="text-center mb-20">
 
-            <p className="text-[#C9A65B] font-display font-semibold text-sm tracking-widest uppercase mb-3">
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">
               Why Choose Us
             </p>
 
@@ -650,7 +631,7 @@ export default function HomePage() {
                     />
                   </div>
 
-                  <h3 className="font-display font-bold text-[#123C2F] text-lg mb-3">
+                  <h3 className="font-bold text-[#123C2F] text-lg mb-3">
                     {title}
                   </h3>
 
@@ -679,7 +660,7 @@ export default function HomePage() {
 
           <div className="text-center mb-20">
 
-            <p className="text-[#C9A65B] font-display font-semibold text-sm tracking-widest uppercase mb-3">
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">
               What We Do
             </p>
 
@@ -714,7 +695,7 @@ export default function HomePage() {
                     />
                   </div>
 
-                  <h3 className="font-display font-bold text-[#123C2F] text-base mb-2">
+                  <h3 className="font-bold text-[#123C2F] text-base mb-2">
                     {title}
                   </h3>
 
@@ -722,7 +703,7 @@ export default function HomePage() {
                     {desc}
                   </p>
 
-                  <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-display font-semibold text-xs">
+                  <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-semibold text-xs">
                     Learn More
 
                     <ArrowRight
@@ -766,7 +747,7 @@ export default function HomePage() {
 
             <div className="text-center mb-20">
 
-              <p className="text-[#C9A65B] font-display font-semibold text-sm tracking-widest uppercase mb-3">
+              <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">
                 Our Work
               </p>
 
@@ -809,11 +790,11 @@ export default function HomePage() {
 
                   <div className="p-7">
 
-                    <span className="inline-block px-3 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-display font-semibold text-xs capitalize mb-3">
+                    <span className="inline-block px-3 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-semibold text-xs capitalize mb-3">
                       {project.category}
                     </span>
 
-                    <h3 className="font-display font-bold text-[#123C2F] text-lg mb-1">
+                    <h3 className="font-bold text-[#123C2F] text-lg mb-1">
                       {project.title}
                     </h3>
 
@@ -827,7 +808,7 @@ export default function HomePage() {
                       </p>
                     )}
 
-                    <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-display font-semibold text-xs">
+                    <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-semibold text-xs">
                       View Details
 
                       <ArrowRight
@@ -882,7 +863,7 @@ export default function HomePage() {
 
             <div className="text-center mb-20">
 
-              <p className="text-[#C9A65B] font-display font-semibold text-sm tracking-widest uppercase mb-3">
+              <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">
                 Client Love
               </p>
 
@@ -935,7 +916,7 @@ export default function HomePage() {
 
                     <div>
 
-                      <p className="text-[#D8BC79] font-display font-bold text-base">
+                      <p className="text-[#D8BC79] font-bold text-base">
                         {testimonials[testimonialIndex].client_name}
                       </p>
 
@@ -1014,7 +995,7 @@ export default function HomePage() {
 
           <div className="text-center mb-20">
 
-            <p className="text-[#C9A65B] font-display font-semibold text-sm tracking-widest uppercase mb-3">
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">
               How We Work
             </p>
 
@@ -1041,21 +1022,21 @@ export default function HomePage() {
                   className="relative p-8 rounded-2xl border border-gray-100 bg-white card-hover group"
                 >
 
-                  <div className="text-5xl font-display font-extrabold text-[#123C2F]/8 absolute top-6 right-8 leading-none select-none">
+                  <div className="text-5xl font-extrabold text-[#123C2F]/8 absolute top-6 right-8 leading-none select-none">
                     {num}
                   </div>
 
 
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#123C2F] to-[#184D3A] flex items-center justify-center mb-5">
 
-                    <span className="text-[#C9A65B] font-display font-extrabold text-sm">
+                    <span className="text-[#C9A65B] font-extrabold text-sm">
                       {num}
                     </span>
 
                   </div>
 
 
-                  <h3 className="font-display font-bold text-[#123C2F] text-lg mb-2">
+                  <h3 className="font-bold text-[#123C2F] text-lg mb-2">
                     {title}
                   </h3>
 
@@ -1082,7 +1063,7 @@ export default function HomePage() {
 
         <div className="container-custom">
 
-          <p className="text-center text-gray-400 font-display text-sm mb-8 uppercase tracking-widest">
+          <p className="text-center text-gray-400 text-sm mb-8 uppercase tracking-widest">
             Trusted by Businesses Across Africa
           </p>
 
@@ -1099,7 +1080,7 @@ export default function HomePage() {
             ].map((name) => (
               <div
                 key={name}
-                className="text-gray-300 hover:text-[#123C2F] font-display font-bold text-lg transition-colors cursor-default"
+                className="text-gray-300 hover:text-[#123C2F] font-bold text-lg transition-colors cursor-default"
               >
                 {name}
               </div>

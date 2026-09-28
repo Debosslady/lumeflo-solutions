@@ -67,7 +67,7 @@ export default function ContactPage() {
 
   const field = (id: keyof FormState, label: string, type = 'text', placeholder = '') => (
     <div>
-      <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">{label}</label>
+      <label className="block font-semibold text-[#123C2F] text-sm mb-2">{label}</label>
       <input
         type={type}
         className={`input-field ${errors[id] ? 'border-red-400' : ''}`}
@@ -88,7 +88,7 @@ export default function ContactPage() {
           backgroundSize: '60px 60px',
         }} />
         <div className="container-custom relative z-10 text-center">
-          <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">Let's Talk</p>
+          <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">Let's Talk</p>
           <h1 className="hero-text text-white mb-6 max-w-3xl mx-auto">
             Start Your Journey to <span className="text-gradient-gold">Growth</span>
           </h1>
@@ -108,8 +108,8 @@ export default function ContactPage() {
             {/* Info Column */}
             <div className="space-y-8">
               <div>
-                <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Contact Information</p>
-                <h2 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl mb-4">We'd Love to Hear From You</h2>
+                <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Contact Information</p>
+                <h2 className="font-black text-[#123C2F] text-2xl mb-4">We'd Love to Hear From You</h2>
                 <p className="text-gray-600 leading-relaxed">Our friendly team is always ready to discuss your project, answer questions, or help you explore the right solution for your business.</p>
               </div>
 
@@ -127,7 +127,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-gray-400 text-xs mb-0.5">{label}</p>
-                        <p className="font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm">{value}</p>
+                        <p className="font-semibold text-[#123C2F] text-sm">{value}</p>
                       </div>
                     </div>
                   )
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <div className="bg-[#F8F6F0] rounded-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock size={18} className="text-[#C9A65B]" />
-                  <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-sm">Office Hours</h4>
+                  <h4 className="font-bold text-[#123C2F] text-sm">Office Hours</h4>
                 </div>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex justify-between"><span>Monday – Friday</span><span className="font-semibold text-[#123C2F]">8:00 AM – 6:00 PM</span></div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
               {/* Social links */}
               <div>
-                <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-sm mb-4">Follow Us</h4>
+                <h4 className="font-bold text-[#123C2F] text-sm mb-4">Follow Us</h4>
                 <div className="flex gap-3">
                   {[
                     { icon: FacebookIcon, href: '#', label: 'Facebook' },
@@ -182,7 +182,7 @@ export default function ContactPage() {
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#123C2F] to-[#184D3A] flex items-center justify-center mb-6">
                     <CheckCircle size={40} className="text-[#C9A65B]" />
                   </div>
-                  <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-3xl mb-4">Message Sent!</h3>
+                  <h3 className="font-black text-[#123C2F] text-3xl mb-4">Message Sent!</h3>
                   <p className="text-gray-600 text-lg max-w-md">
                     Thank you for reaching out. Our team will review your enquiry and respond within 24 hours with a tailored proposal.
                   </p>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                     {field('company', 'Company / Organisation', 'text', 'Your company name')}
                   </div>
                   <div>
-                    <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Service Interested In</label>
+                    <label className="block font-semibold text-[#123C2F] text-sm mb-2">Service Interested In</label>
                     <select
                       className="input-field"
                       value={form.service_interested}
@@ -215,7 +215,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Budget Range</label>
+                    <label className="block font-semibold text-[#123C2F] text-sm mb-2">Budget Range</label>
                     <select
                       className="input-field"
                       value={form.budget}
@@ -226,7 +226,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Your Message *</label>
+                    <label className="block font-semibold text-[#123C2F] text-sm mb-2">Your Message *</label>
                     <textarea
                       className={`input-field ${errors.message ? 'border-red-400' : ''}`}
                       placeholder="Tell us about your project, goals, and any specific requirements..."
@@ -260,7 +260,7 @@ export default function ContactPage() {
       <div className="h-72 bg-gradient-to-br from-[#F8F6F0] to-[#E8F5EF] flex items-center justify-center">
         <div className="text-center">
           <MapPin size={40} className="text-[#C9A65B] mx-auto mb-3" />
-          <p className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-lg">Lumeflo Solutions Limited</p>
+          <p className="font-bold text-[#123C2F] text-lg">Lumeflo Solutions Limited</p>
           <p className="text-gray-500">Lagos, Nigeria</p>
         </div>
       </div>

@@ -1,10 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import {
-  CheckCircle, ArrowRight, Clock, Calendar, Award, Users,
-  Monitor, Palette, Share2, TrendingUp, BookOpen, Video
-} from 'lucide-react'
+import { CircleCheck as CheckCircle, ArrowRight, Clock, Calendar, Award, Users, Monitor, Palette, Share2, TrendingUp, BookOpen, Video } from 'lucide-react'
 import { supabase, type TrainingProgram } from '../lib/supabase'
 
 const iconMap: Record<string, React.ElementType> = {
@@ -59,7 +56,7 @@ export default function TrainingPage() {
           backgroundSize: '60px 60px',
         }} />
         <div className="container-custom relative z-10 text-center">
-          <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">Lumeflo Training</p>
+          <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">Lumeflo Training</p>
           <h1 className="hero-text text-white mb-6 max-w-3xl mx-auto">
             Unlock Your Digital <span className="text-gradient-gold">Potential</span>
           </h1>
@@ -84,7 +81,7 @@ export default function TrainingPage() {
       <section className="section-pad bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Why Lumeflo Training</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Why Lumeflo Training</p>
             <h2 className="section-heading text-[#123C2F] mb-4">Skills That Launch Careers & Businesses</h2>
             <div className="divider-gold mx-auto mb-5" />
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">Our programs are designed with one goal: to make you job-ready and business-ready in the shortest possible time.</p>
@@ -96,7 +93,7 @@ export default function TrainingPage() {
                 <div className="service-icon-wrap mb-5">
                   <Icon size={24} className="text-[#123C2F]" />
                 </div>
-                <h3 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-lg mb-2">{title}</h3>
+                <h3 className="font-bold text-[#123C2F] text-lg mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -108,7 +105,7 @@ export default function TrainingPage() {
       <section id="programs" className="section-pad bg-[#F8F6F0]">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Training Programs</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Training Programs</p>
             <h2 className="section-heading text-[#123C2F] mb-4">Choose Your Path to Success</h2>
             <div className="divider-gold mx-auto" />
           </div>
@@ -132,11 +129,11 @@ export default function TrainingPage() {
                           <div className="service-icon-wrap mb-3">
                             <Icon size={24} className="text-[#123C2F]" />
                           </div>
-                          <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-xl">{program.title}</h3>
-                          <span className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm">{program.category}</span>
+                          <h3 className="font-black text-[#123C2F] text-xl">{program.title}</h3>
+                          <span className="text-[#C9A65B] font-semibold text-sm">{program.category}</span>
                         </div>
                         <div className="text-right">
-                          <div className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl">{program.price}</div>
+                          <div className="font-black text-[#123C2F] text-2xl">{program.price}</div>
                           <div className="text-gray-400 text-xs">Full Program</div>
                         </div>
                       </div>
@@ -189,7 +186,7 @@ export default function TrainingPage() {
               { num: '100%', label: 'Graduate Certified' },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div className="font-[family-name:var(--font-display)] font-black text-4xl text-gradient-gold mb-2">{num}</div>
+                <div className="font-black text-4xl text-gradient-gold mb-2">{num}</div>
                 <div className="text-white/60 text-sm font-medium">{label}</div>
               </div>
             ))}
@@ -202,7 +199,7 @@ export default function TrainingPage() {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Ready to Start?</p>
+              <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Ready to Start?</p>
               <h2 className="section-heading text-[#123C2F] mb-4">Enroll Today</h2>
               <div className="divider-gold mx-auto mb-5" />
               <p className="text-gray-600 text-lg">Fill out the form below and our team will contact you within 24 hours with enrollment details.</p>
@@ -211,14 +208,14 @@ export default function TrainingPage() {
             {enrollState === 'success' ? (
               <div className="bg-[#F0FDF4] border border-[#C9A65B]/30 rounded-3xl p-12 text-center">
                 <CheckCircle size={56} className="text-[#C9A65B] mx-auto mb-6" />
-                <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl mb-3">Enrollment Request Received!</h3>
+                <h3 className="font-black text-[#123C2F] text-2xl mb-3">Enrollment Request Received!</h3>
                 <p className="text-gray-600">Our team will contact you within 24 hours to complete your enrollment. We look forward to welcoming you!</p>
               </div>
             ) : (
               <form onSubmit={handleEnroll} className="space-y-5 bg-white border border-gray-100 rounded-3xl p-8 shadow-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Full Name *</label>
+                    <label className="block font-semibold text-[#123C2F] text-sm mb-2">Full Name *</label>
                     <input
                       type="text"
                       className="input-field"
@@ -229,7 +226,7 @@ export default function TrainingPage() {
                     />
                   </div>
                   <div>
-                    <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Email Address *</label>
+                    <label className="block font-semibold text-[#123C2F] text-sm mb-2">Email Address *</label>
                     <input
                       type="email"
                       className="input-field"
@@ -241,7 +238,7 @@ export default function TrainingPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Phone Number</label>
+                  <label className="block font-semibold text-[#123C2F] text-sm mb-2">Phone Number</label>
                   <input
                     type="tel"
                     className="input-field"
@@ -251,7 +248,7 @@ export default function TrainingPage() {
                   />
                 </div>
                 <div>
-                  <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Program of Interest *</label>
+                  <label className="block font-semibold text-[#123C2F] text-sm mb-2">Program of Interest *</label>
                   <select
                     className="input-field"
                     value={enrollForm.program}
@@ -265,7 +262,7 @@ export default function TrainingPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm mb-2">Preferred Learning Mode *</label>
+                  <label className="block font-semibold text-[#123C2F] text-sm mb-2">Preferred Learning Mode *</label>
                   <select
                     className="input-field"
                     value={enrollForm.mode}

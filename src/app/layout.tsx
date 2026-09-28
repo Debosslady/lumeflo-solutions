@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
-// import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 import Layout from '@/components/layout/Layout'
 
 import './globals.css'
 
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Lumeflo Solutions Limited — Creative & Digital Agency',
@@ -56,8 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}> */}
-        <body>
+      <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

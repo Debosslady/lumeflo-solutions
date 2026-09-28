@@ -1,30 +1,9 @@
  import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseUrl =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const supabasePublishableKey =
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
-
-console.log('=== SUPABASE ENV CHECK ===')
-console.log('URL:', supabaseUrl ? 'OK' : 'MISSING')
-console.log(
-  'KEY:',
-  supabasePublishableKey
-    ? `OK (length: ${supabasePublishableKey.length})`
-    : 'MISSING'
-)
-console.log('==========================')
-
-if (!supabaseUrl) {
-  throw new Error(
-    'Missing NEXT_PUBLIC_SUPABASE_URL in .env.local'
-  )
-}
-
-if (!supabasePublishableKey) {
-  throw new Error(
-    'Missing NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in .env.local'
-  )
-}
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || ''
 
 export const supabase = createClient(
   supabaseUrl,

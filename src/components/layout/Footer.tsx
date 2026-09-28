@@ -47,7 +47,7 @@ export default function Footer() {
     <footer className="bg-[#0A2820] text-white">
       <div className="bg-gradient-to-r from-[#123C2F] to-[#1E6045] py-20">
         <div className="container-custom text-center">
-          <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">
+          <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">
             Ready to Transform Your Business?
           </p>
           <h2 className="section-heading text-white mb-6">
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-[family-name:var(--font-display)] font-bold text-white text-base mb-5">Quick Links</h4>
+              <h4 className="font-bold text-white text-base mb-5">Quick Links</h4>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.path}>
@@ -114,7 +114,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-[family-name:var(--font-display)] font-bold text-white text-base mb-5">Our Services</h4>
+              <h4 className="font-bold text-white text-base mb-5">Our Services</h4>
               <ul className="space-y-3">
                 {services.map((service) => (
                   <li key={service}>
@@ -131,7 +131,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-[family-name:var(--font-display)] font-bold text-white text-base mb-5">Get In Touch</h4>
+              <h4 className="font-bold text-white text-base mb-5">Get In Touch</h4>
               <div className="space-y-4 mb-8">
                 <a href="mailto:lumeflosolutions@gmail.com" className="flex items-start gap-3 text-white/60 hover:text-[#C9A65B] transition-colors group">
                   <div className="w-8 h-8 rounded-lg bg-[#C9A65B]/10 flex items-center justify-center mt-0.5 group-hover:bg-[#C9A65B] transition-colors">
@@ -163,7 +163,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <h5 className="font-[family-name:var(--font-display)] font-semibold text-white text-sm mb-3">Newsletter</h5>
+                <h5 className="font-semibold text-white text-sm mb-3">Newsletter</h5>
                 {subscribeState === 'success' ? (
                   <p className="text-[#C9A65B] text-sm">Thank you for subscribing!</p>
                 ) : (

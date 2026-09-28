@@ -40,7 +40,7 @@ export default function Header() {
   const headerBg = transparent
     ? 'bg-transparent'
     : 'bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-100'
-  const linkBase = 'px-4 py-2 rounded-lg font-[family-name:var(--font-display)] font-medium text-sm transition-colors duration-200'
+  const linkBase = 'px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200'
   const linkStyle = transparent ? 'text-white/85 hover:text-[#D8BC79]' : 'text-[#2D2D2D] hover:text-[#123C2F]'
   const activeStyle = transparent ? 'text-[#D8BC79] font-semibold' : 'text-[#123C2F] font-semibold'
 
@@ -67,7 +67,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             {/* <a
               href=" "
-              className={`flex items-center gap-2 text-sm font-[family-name:var(--font-display)] font-medium transition-colors ${transparent ? 'text-[#D8BC79]' : 'text-[#123C2F]'}`}
+              className={`flex items-center gap-2 text-sm font-medium transition-colors ${transparent ? 'text-[#D8BC79]' : 'text-[#123C2F]'}`}
             >
               <Phone size={15} />
               <span>+234 800 000 0000</span>
@@ -96,7 +96,7 @@ export default function Header() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`px-4 py-3 rounded-xl font-[family-name:var(--font-display)] font-medium text-sm transition-all ${isActive(link.path) ? 'bg-[#123C2F] text-white' : 'text-[#2D2D2D] hover:bg-gray-50'}`}
+                className={`px-4 py-3 rounded-xl font-medium text-sm transition-all ${isActive(link.path) ? 'bg-[#123C2F] text-white' : 'text-[#2D2D2D] hover:bg-gray-50'}`}
               >
                 {link.label}
               </Link>

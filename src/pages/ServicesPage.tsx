@@ -2,10 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import {
-  Palette, Globe, Share2, BookOpen, Search, ArrowRight,
-  CheckCircle, ChevronDown, ChevronUp, BarChart3
-} from 'lucide-react'
+import { Palette, Globe, Share2, BookOpen, Search, ArrowRight, CircleCheck as CheckCircle, ChevronDown, ChevronUp, ChartBar as BarChart3 } from 'lucide-react'
 
 const serviceCategories = [
   {
@@ -166,7 +163,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors"
         onClick={() => setOpen(!open)}
       >
-        <span className="font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm">{q}</span>
+        <span className="font-semibold text-[#123C2F] text-sm">{q}</span>
         {open ? <ChevronUp size={18} className="text-[#C9A65B] shrink-0" /> : <ChevronDown size={18} className="text-gray-400 shrink-0" />}
       </button>
       {open && (
@@ -191,7 +188,7 @@ export default function ServicesPage() {
           backgroundSize: '64px 64px',
         }} />
         <div className="container-custom relative z-10 text-center">
-          <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">Our Services</p>
+          <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">Our Services</p>
           <h1 className="hero-text text-white mb-6 max-w-3xl mx-auto">
             Everything You Need to <span className="text-gradient-gold">Grow</span> Your Brand
           </h1>
@@ -212,7 +209,7 @@ export default function ServicesPage() {
               <button
                 key={id}
                 onClick={() => setActive(id)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-[family-name:var(--font-display)] font-semibold text-sm transition-all duration-200 border ${
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-200 border ${
                   active === id
                     ? 'bg-[#123C2F] text-white border-[#123C2F] shadow-lg shadow-[#123C2F]/15'
                     : 'bg-white text-gray-600 border-gray-200 hover:border-[#C9A65B] hover:text-[#123C2F]'
@@ -228,14 +225,14 @@ export default function ServicesPage() {
             <div>
               <div className={`inline-flex items-center gap-3 px-5 py-2.5 rounded-xl bg-gradient-to-r ${activeService.color} mb-6`}>
                 <activeService.icon size={20} className="text-[#C9A65B]" />
-                <span className="text-white font-[family-name:var(--font-display)] font-semibold text-sm">{activeService.tagline}</span>
+                <span className="text-white font-semibold text-sm">{activeService.tagline}</span>
               </div>
 
               <h2 className="section-heading text-[#123C2F] mb-4">{activeService.title}</h2>
               <div className="divider-gold mb-6" />
               <p className="text-gray-600 leading-relaxed text-base mb-8">{activeService.overview}</p>
 
-              <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">What's Included</h4>
+              <h4 className="font-bold text-[#123C2F] text-base mb-4">What's Included</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
                 {activeService.items.map((item) => (
                   <div key={item} className="flex items-start gap-2">
@@ -245,7 +242,7 @@ export default function ServicesPage() {
                 ))}
               </div>
 
-              <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">Key Benefits</h4>
+              <h4 className="font-bold text-[#123C2F] text-base mb-4">Key Benefits</h4>
               <div className="space-y-2 mb-8">
                 {activeService.benefits.map((b) => (
                   <div key={b} className="flex items-center gap-3 bg-[#F8F6F0] rounded-xl px-4 py-3">
@@ -271,12 +268,12 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">Our Process</h4>
+                <h4 className="font-bold text-[#123C2F] text-base mb-4">Our Process</h4>
                 <div className="space-y-3">
                   {activeService.process.map((step, i) => (
                     <div key={step} className="flex items-center gap-4">
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#123C2F] to-[#184D3A] flex items-center justify-center shrink-0">
-                        <span className="text-[#C9A65B] font-[family-name:var(--font-display)] font-black text-xs">{String(i + 1).padStart(2, '0')}</span>
+                        <span className="text-[#C9A65B] font-black text-xs">{String(i + 1).padStart(2, '0')}</span>
                       </div>
                       <span className="text-gray-700 text-sm font-medium">{step}</span>
                     </div>
@@ -285,7 +282,7 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">Frequently Asked Questions</h4>
+                <h4 className="font-bold text-[#123C2F] text-base mb-4">Frequently Asked Questions</h4>
                 <div className="space-y-3">
                   {activeService.faqs.map((faq) => (
                     <FAQItem key={faq.q} q={faq.q} a={faq.a} />

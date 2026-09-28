@@ -53,7 +53,7 @@ export default function AboutPage() {
         }} />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">About Lumeflo</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">About Lumeflo</p>
             <h1 className="hero-text text-white mb-6">
               Who We Are &amp; <span className="text-gradient-gold">What Drives Us</span>
             </h1>
@@ -72,7 +72,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Our Story</p>
+              <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Our Story</p>
               <h2 className="section-heading text-[#123C2F] mb-5">Built on Passion. Driven by Excellence.</h2>
               <div className="divider-gold mb-8" />
               <div className="space-y-5 text-gray-600 leading-relaxed">
@@ -104,7 +104,7 @@ export default function AboutPage() {
                     <Star className="text-[#C9A65B]" size={22} />
                   </div>
                   <div>
-                    <div className="font-[family-name:var(--font-display)] font-black text-2xl text-[#123C2F]">98%</div>
+                    <div className="font-black text-2xl text-[#123C2F]">98%</div>
                     <div className="text-gray-500 text-xs font-medium">Client Satisfaction Rate</div>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#123C2F] to-[#184D3A] flex items-center justify-center mb-6">
                 <Target size={28} className="text-[#C9A65B]" />
               </div>
-              <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl mb-4">Our Mission</h3>
+              <h3 className="font-black text-[#123C2F] text-2xl mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed text-base">
                 To empower businesses across Africa with world-class creative, branding, and digital solutions that drive measurable growth, build lasting brand equity, and open new possibilities for success in the digital age.
               </p>
@@ -132,7 +132,7 @@ export default function AboutPage() {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#C9A65B] to-[#D8BC79] flex items-center justify-center mb-6">
                 <Eye size={28} className="text-[#123C2F]" />
               </div>
-              <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl mb-4">Our Vision</h3>
+              <h3 className="font-black text-[#123C2F] text-2xl mb-4">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed text-base">
                 To be Africa's most trusted and respected creative and digital agency — setting the standard for excellence, innovation, and client impact across the continent and beyond.
               </p>
@@ -145,7 +145,7 @@ export default function AboutPage() {
       <section className="section-pad bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">What We Stand For</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">What We Stand For</p>
             <h2 className="section-heading text-[#123C2F] mb-4">Our Core Values</h2>
             <div className="divider-gold mx-auto mb-5" />
             <p className="text-gray-600 max-w-xl mx-auto text-lg">The principles that guide every decision, every design, and every interaction at Lumeflo.</p>
@@ -157,7 +157,7 @@ export default function AboutPage() {
                 <div className="service-icon-wrap mb-5">
                   <Icon size={24} className="text-[#123C2F]" />
                 </div>
-                <h3 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-lg mb-3">{title}</h3>
+                <h3 className="font-bold text-[#123C2F] text-lg mb-3">{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -169,7 +169,7 @@ export default function AboutPage() {
       <section className="section-pad bg-[#F8F6F0]">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">Our Journey</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">Our Journey</p>
             <h2 className="section-heading text-[#123C2F] mb-4">Company Milestones</h2>
             <div className="divider-gold mx-auto" />
           </div>
@@ -182,10 +182,10 @@ export default function AboutPage() {
                 <div key={item.year} className={`flex gap-8 items-start ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                     <div className="glass-card-light rounded-2xl p-8 card-hover">
-                      <span className="inline-block px-4 py-1.5 rounded-full bg-[#123C2F] text-[#C9A65B] font-[family-name:var(--font-display)] font-black text-lg mb-3">
+                      <span className="inline-block px-4 py-1.5 rounded-full bg-[#123C2F] text-[#C9A65B] font-black text-lg mb-3">
                         {item.year}
                       </span>
-                      <h3 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-xl mb-2">{item.title}</h3>
+                      <h3 className="font-bold text-[#123C2F] text-xl mb-2">{item.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export default function AboutPage() {
       <section className="section-pad bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-3">The People Behind the Magic</p>
+            <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-3">The People Behind the Magic</p>
             <h2 className="section-heading text-[#123C2F] mb-4">Meet Our Leadership</h2>
             <div className="divider-gold mx-auto mb-5" />
             <p className="text-gray-600 max-w-xl mx-auto text-lg">A team of passionate creatives, strategists, and technologists united by a shared commitment to excellence.</p>
@@ -225,8 +225,8 @@ export default function AboutPage() {
                     <Heart size={16} className="text-[#123C2F]" />
                   </div>
                 </div>
-                <h3 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-lg">{member.name}</h3>
-                <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm mb-3">{member.role}</p>
+                <h3 className="font-black text-[#123C2F] text-lg">{member.name}</h3>
+                <p className="text-[#C9A65B] font-semibold text-sm mb-3">{member.role}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{member.desc}</p>
               </div>
             ))}

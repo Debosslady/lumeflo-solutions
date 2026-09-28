@@ -21,7 +21,7 @@ function NewsletterBox() {
 
   return (
     <div className="bg-gradient-to-br from-[#123C2F] to-[#184D3A] rounded-2xl p-7 text-white">
-      <h4 className="font-[family-name:var(--font-display)] font-black text-xl mb-2">Stay Informed</h4>
+      <h4 className="font-black text-xl mb-2">Stay Informed</h4>
       <p className="text-white/70 text-sm mb-5">Get the latest insights on branding, web design, and digital growth delivered to your inbox.</p>
 
       {state === 'success' ? (
@@ -87,7 +87,7 @@ export default function BlogPage() {
           backgroundSize: '60px 60px',
         }} />
         <div className="container-custom relative z-10 text-center">
-          <p className="text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm tracking-widest uppercase mb-4">The Lumeflo Blog</p>
+          <p className="text-[#C9A65B] font-semibold text-sm tracking-widest uppercase mb-4">The Lumeflo Blog</p>
           <h1 className="hero-text text-white mb-6 max-w-3xl mx-auto">
             Insights to <span className="text-gradient-gold">Grow</span> Your Business
           </h1>
@@ -139,7 +139,7 @@ export default function BlogPage() {
                 </div>
               ) : filtered.length === 0 ? (
                 <div className="text-center py-20">
-                  <p className="text-gray-400 font-[family-name:var(--font-display)] text-lg">No articles found.</p>
+                  <p className="text-gray-400 text-lg">No articles found.</p>
                 </div>
               ) : (
                 <>
@@ -155,21 +155,21 @@ export default function BlogPage() {
                       </div>
                       <div className="p-8">
                         <div className="flex items-center gap-4 mb-4">
-                          <span className="px-3 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-[family-name:var(--font-display)] font-semibold text-xs">
+                          <span className="px-3 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-semibold text-xs">
                             {featured.category}
                           </span>
-                          <span className="inline-block px-3 py-1 rounded-full bg-[#C9A65B]/12 text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-xs">
+                          <span className="inline-block px-3 py-1 rounded-full bg-[#C9A65B]/12 text-[#C9A65B] font-semibold text-xs">
                             Featured
                           </span>
                         </div>
-                        <h2 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-2xl mb-3 leading-tight">{featured.title}</h2>
+                        <h2 className="font-black text-[#123C2F] text-2xl mb-3 leading-tight">{featured.title}</h2>
                         <p className="text-gray-600 leading-relaxed mb-5">{featured.excerpt}</p>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-4 text-gray-400 text-sm">
                             <span className="flex items-center gap-1"><Calendar size={13} />{formatDate(featured.published_at)}</span>
                             <span className="flex items-center gap-1"><Clock size={13} />{featured.read_time} min read</span>
                           </div>
-                          <Link href="/contact" className="flex items-center gap-1 text-[#C9A65B] font-[family-name:var(--font-display)] font-semibold text-sm hover:gap-2 transition-all">
+                          <Link href="/contact" className="flex items-center gap-1 text-[#C9A65B] font-semibold text-sm hover:gap-2 transition-all">
                             Read More <ArrowRight size={14} />
                           </Link>
                         </div>
@@ -189,10 +189,10 @@ export default function BlogPage() {
                           />
                         </div>
                         <div className="p-5 flex-1 flex flex-col justify-center">
-                          <span className="px-2.5 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-[family-name:var(--font-display)] font-semibold text-xs inline-block mb-2 w-fit">
+                          <span className="px-2.5 py-1 rounded-full bg-[#123C2F]/8 text-[#123C2F] font-semibold text-xs inline-block mb-2 w-fit">
                             {post.category}
                           </span>
-                          <h3 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base leading-tight mb-2">{post.title}</h3>
+                          <h3 className="font-bold text-[#123C2F] text-base leading-tight mb-2">{post.title}</h3>
                           <p className="text-gray-500 text-sm leading-relaxed mb-3 line-clamp-2">{post.excerpt}</p>
                           <div className="flex items-center gap-3 text-gray-400 text-xs">
                             <span className="flex items-center gap-1"><Calendar size={11} />{formatDate(post.published_at)}</span>
@@ -213,7 +213,7 @@ export default function BlogPage() {
 
               {/* Categories */}
               <div className="bg-[#F8F6F0] rounded-2xl p-6">
-                <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">Categories</h4>
+                <h4 className="font-bold text-[#123C2F] text-base mb-4">Categories</h4>
                 <div className="space-y-2">
                   {allCategories.filter((c) => c !== 'All').map((cat) => {
                     const count = posts.filter((p) => p.category === cat).length
@@ -238,15 +238,15 @@ export default function BlogPage() {
 
               {/* Popular posts */}
               <div>
-                <h4 className="font-[family-name:var(--font-display)] font-bold text-[#123C2F] text-base mb-4">Popular Articles</h4>
+                <h4 className="font-bold text-[#123C2F] text-base mb-4">Popular Articles</h4>
                 <div className="space-y-4">
                   {posts.slice(0, 3).map((post, i) => (
                     <div key={post.id} className="flex gap-3 items-start">
-                      <span className="font-[family-name:var(--font-display)] font-black text-2xl text-[#C9A65B]/30 leading-none shrink-0">
+                      <span className="font-black text-2xl text-[#C9A65B]/30 leading-none shrink-0">
                         {String(i + 1).padStart(2, '0')}
                       </span>
                       <div>
-                        <p className="font-[family-name:var(--font-display)] font-semibold text-[#123C2F] text-sm leading-tight mb-1">{post.title}</p>
+                        <p className="font-semibold text-[#123C2F] text-sm leading-tight mb-1">{post.title}</p>
                         <p className="text-gray-400 text-xs">{post.read_time} min read</p>
                       </div>
                     </div>
@@ -256,7 +256,7 @@ export default function BlogPage() {
 
               {/* CTA */}
               <div className="bg-gradient-to-br from-[#C9A65B] to-[#D8BC79] rounded-2xl p-7 text-center">
-                <h4 className="font-[family-name:var(--font-display)] font-black text-[#123C2F] text-xl mb-2">Need Help Growing?</h4>
+                <h4 className="font-black text-[#123C2F] text-xl mb-2">Need Help Growing?</h4>
                 <p className="text-[#123C2F]/70 text-sm mb-5">Let our experts build your brand and digital presence.</p>
                 <Link href="/contact" className="btn-primary justify-center w-full">
                   Get a Free Quote
