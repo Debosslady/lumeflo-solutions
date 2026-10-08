@@ -7,8 +7,8 @@ interface LogoProps {
 }
 
 const logoSrc = {
-  dark: '/assets/logos/Lumeflo_Solutions_Logo copy 2.png',
-  light: '/assets/logos/Logo_LSL.png',
+  dark: '/assets/logos/Lumeflo_Solutions_logo.png',
+  light: '/assets/logos/Lumeflo_Solutions_logo.png',
 }
 
 const heights = { sm: 40, md: 52, lg: 68 } as const
@@ -29,7 +29,7 @@ export default function Logo({ variant = 'dark', size = 'md', showText = true }:
       />
       {showText && (
         <div className="flex flex-col leading-tight">
-          <span
+          {/* <span
             className={`font-bold ${size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-xl' : 'text-base'} ${variant === 'light' ? 'text-white' : 'text-[#123C2F]'} tracking-tight`}
           >
             Lumeflo
@@ -38,7 +38,7 @@ export default function Logo({ variant = 'dark', size = 'md', showText = true }:
             className={`font-semibold ${size === 'sm' ? 'text-[8px]' : size === 'lg' ? 'text-[11px]' : 'text-[9px]'} ${variant === 'light' ? 'text-[#D8BC79]' : 'text-[#C9A65B]'} tracking-[0.14em] uppercase`}
           >
             Solutions Limited
-          </span>
+          </span> */}
         </div>
       )}
     </div>

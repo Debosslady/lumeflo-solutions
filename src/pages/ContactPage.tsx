@@ -261,13 +261,13 @@ export default function ContactPage() {
         <div className="text-center">
           <MapPin size={40} className="text-[#C9A65B] mx-auto mb-3" />
           <p className="font-bold text-[#123C2F] text-lg">Lumeflo Solutions Limited</p>
-          <p className="text-gray-500">Lagos, Nigeria</p>
+          <p className="text-gray-500">Port Harcourt, Nigeria</p>
         </div>
       </div>
 
       {/* WhatsApp floating */}
       <a
-        href="https://wa.me/2348000000000"
+        href="https://wa.me/2349055817159"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-[#25D366] shadow-xl flex items-center justify-center hover:scale-110 transition-transform"

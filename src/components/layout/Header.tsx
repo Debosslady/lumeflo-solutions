@@ -65,13 +65,6 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            {/* <a
-              href=" "
-              className={`flex items-center gap-2 text-sm font-medium transition-colors ${transparent ? 'text-[#D8BC79]' : 'text-[#123C2F]'}`}
-            >
-              <Phone size={15} />
-              <span>+234 800 000 0000</span>
-            </a> */}
             <Link href="/contact" className="btn-gold text-sm">
               Start Project
             </Link>
