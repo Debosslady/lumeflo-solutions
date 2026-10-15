@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { CircleCheck as CheckCircle, ArrowRight, Clock, Award, Users, BookOpen, Video, Monitor, Share2 } from 'lucide-react'
 import { supabase } from '../lib/supabase'
+import { notifyAdmin } from '../lib/notifications'
 
 type TrainingProgram = {
   id: string
@@ -68,7 +69,16 @@ export default function TrainingPage() {
       message: `Enrollment inquiry for ${enrollForm.program}. Experience level: ${enrollForm.experienceLevel}. Additional info: ${enrollForm.message}`,
     })
     if (error) setEnrollState('error')
-    else { setEnrollState('success'); setEnrollForm(initForm); setSelectedProgram('') }
+    else {
+      setEnrollState('success'); setEnrollForm(initForm); setSelectedProgram('')
+      notifyAdmin({
+        formType: 'training_registration',
+        name: enrollForm.name,
+        email: enrollForm.email,
+        phone: enrollForm.phone,
+        extra: { program: enrollForm.program, experienceLevel: enrollForm.experienceLevel },
+      })
+    }
   }
 
   const levelColors: Record<string, string> = {

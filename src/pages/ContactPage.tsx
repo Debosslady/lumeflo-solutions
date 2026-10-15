@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Clock, MessageCircle, CircleCheck as CheckCircle, ArrowRight } from 'lucide-react'
 import { supabase } from '../lib/supabase'
+import { notifyAdmin } from '../lib/notifications'
 import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from '../components/SocialIcons'
 
 const services = [
