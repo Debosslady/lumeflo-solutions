@@ -25,19 +25,19 @@ const team = [
   {
     name: 'Chief Creative Officer',
     role: 'Head of Creative & Brand Strategy',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
+    image: 'https://images.pexels.com/photos/11507562/pexels-photo-11507562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     desc: 'Visionary creative leader with expertise in brand identity and digital experience design.',
   },
   {
     name: 'Lead Developer',
     role: 'Head of Technology',
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
+    image: 'https://images.pexels.com/photos/33176064/pexels-photo-33176064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     desc: 'Full-stack expert specializing in React, Next.js and scalable web applications.',
   },
   {
     name: 'Digital Strategist',
     role: 'Head of Growth & Marketing',
-    image: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg',
+    image: 'https://images.pexels.com/photos/11507566/pexels-photo-11507566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     desc: 'Data-driven strategist who translates business goals into digital growth campaigns.',
   },
 ]
@@ -94,8 +94,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
-                alt="Lumeflo team at work"
+                src="https://images.pexels.com/photos/30688593/pexels-photo-30688593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="African business team collaborating in office"
                 className="rounded-3xl w-full object-cover h-96 lg:h-[500px] shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl">

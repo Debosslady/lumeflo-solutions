@@ -186,48 +186,56 @@ const services = [
     title: 'Website Development',
     desc: 'Custom, responsive websites — from landing pages to full e-commerce and school portals.',
     color: 'from-[#123C2F]/8 to-[#C9A65B]/10',
+    image: 'https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: BarChart3,
     title: 'Data Analysis',
     desc: 'Turn raw business data into clear, actionable insights that drive smarter decisions and growth.',
     color: 'from-[#184D3A]/8 to-[#C9A65B]/10',
+    image: 'https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: Palette,
     title: 'Creative Graphic Design',
     desc: 'Logos, brand identity, flyers, packaging, and visual materials that make your brand unforgettable.',
     color: 'from-[#1E6045]/8 to-[#C9A65B]/10',
+    image: 'https://images.pexels.com/photos/16313664/pexels-photo-16313664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: Search,
     title: 'SEO Optimization',
     desc: 'Rank higher on search engines with proven strategies that drive organic traffic and qualified leads.',
     color: 'from-[#123C2F]/8 to-[#D8BC79]/10',
+    image: 'https://images.pexels.com/photos/12813050/pexels-photo-12813050.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: CheckCircle,
     title: 'Website Maintenance',
     desc: 'Keep your website secure, updated, and performing at peak levels with our managed maintenance plans.',
     color: 'from-[#184D3A]/8 to-[#D8BC79]/10',
+    image: 'https://images.pexels.com/photos/17489151/pexels-photo-17489151.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: Share2,
     title: 'Social Media Management',
     desc: 'Content planning, graphics, captions, scheduling, and community management to grow your audience.',
     color: 'from-[#1E6045]/8 to-[#EDD99A]/10',
+    image: 'https://images.pexels.com/photos/15595050/pexels-photo-15595050.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: Globe,
     title: 'Digital Branding',
     desc: 'Build a consistent, powerful brand presence across all digital channels that commands trust and recognition.',
     color: 'from-[#123C2F]/8 to-[#C9A65B]/10',
+    image: 'https://images.pexels.com/photos/15635247/pexels-photo-15635247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     icon: BookOpen,
     title: 'Content Strategy',
     desc: 'Strategic content planning, creation, and distribution that engages your audience and drives conversions.',
     color: 'from-[#184D3A]/8 to-[#C9A65B]/10',
+    image: 'https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
 ]
 
@@ -681,35 +689,41 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
             {services.map(
-              ({ icon: Icon, title, desc, color }) => (
+              ({ icon: Icon, title, desc, color, image }) => (
                 <Link
                   key={title}
                   href="/services"
-                  className={`rounded-2xl p-7 card-hover bg-gradient-to-br ${color} border border-gray-100 group block`}
+                  className={`rounded-2xl card-hover bg-gradient-to-br ${color} border border-gray-100 group block overflow-hidden service-card-wrap`}
                 >
-
-                  <div className="service-icon-wrap mb-4">
-                    <Icon
-                      size={22}
-                      className="text-[#123C2F]"
+                  <div className="h-40 overflow-hidden relative">
+                    <img
+                      src={image}
+                      alt={title}
+                      className="w-full h-full object-cover service-card-img"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent" />
+                    <div className="absolute bottom-3 left-3 service-icon-wrap" style={{ width: '40px', height: '40px', borderRadius: '10px' }}>
+                      <Icon size={18} className="text-[#123C2F]" />
+                    </div>
                   </div>
 
-                  <h3 className="font-bold text-[#123C2F] text-base mb-2">
-                    {title}
-                  </h3>
+                  <div className="p-5">
+                    <h3 className="font-bold text-[#123C2F] text-base mb-2">
+                      {title}
+                    </h3>
 
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {desc}
-                  </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {desc}
+                    </p>
 
-                  <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-semibold text-xs">
-                    Learn More
+                    <div className="flex items-center gap-1 mt-4 text-[#C9A65B] font-semibold text-xs">
+                      Learn More
 
-                    <ArrowRight
-                      size={13}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
+                      <ArrowRight
+                        size={13}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </div>
                   </div>
 
                 </Link>
